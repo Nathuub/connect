@@ -1,0 +1,64 @@
+.game {
+    display: flex;
+    width: min-content;
+    background-color: blue;
+}
+
+.row {
+    border: solid 2px black;
+    width: 4em;
+    height: 4em;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.row1 {
+    border: none;
+}
+
+.game {
+    margin-top: 1em;
+}
+
+.yellow, .red, .prevYellow, .prevRed {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 32);
+    border: solid 2px rgba(0, 0, 0, 0.603);
+    position: relative;
+}
+
+.yellow, .red {
+    animation: pieceSlide 2s ease-in;
+}
+
+@keyframes pieceSlide {
+    0% {top: -70vh;}
+    60% {top: 80vh;}
+    61% {opacity: 0%;}
+    62% {
+        opacity: 0%;
+        top: -50em;
+    }
+    63% {opacity: 100%;}
+    100% {top: 0;}
+}
+
+.red, .prevRed {
+    background-color: rgb(250, 45, 45);
+}
+
+.prevYellow, .prevRed {
+    opacity: 50%;
+}
+
+.reset_button p {
+    font-size: 20px;
+}
+
+#reset_game {
+    margin-top: 1em;
+    font-size: 16px;
+    padding: 0.3em;
+}

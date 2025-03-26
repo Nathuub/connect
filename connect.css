@@ -1,0 +1,255 @@
+.all_connect {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin: 1em; }
+
+.score td, .score th {
+  border: solid 1px black;
+  padding: 0.5em; }
+
+.game {
+  display: flex;
+  width: min-content;
+  background-color: #005a9b;
+  padding: 10px;
+  border-radius: 5px; }
+
+.row {
+  border: solid 2px black;
+  width: 4em;
+  height: 4em;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: white; }
+
+.row1 {
+  border-radius: 10px; }
+
+.p1, .p2, .preview1, .preview2 {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #ffd45f;
+  border: solid 2px rgba(0, 0, 0, 0.603);
+  position: relative; }
+
+.p1, .p2 {
+  animation: pieceSlide 2s ease-in; }
+
+@keyframes pieceSlide {
+  0% {
+    top: -70vh; }
+  60% {
+    top: 80vh; }
+  61% {
+    opacity: 0%; }
+  62% {
+    opacity: 0%;
+    top: -50em; }
+  63% {
+    opacity: 100%; }
+  100% {
+    top: 0; } }
+.p1, .preview1 {
+  background-color: #aa0000; }
+
+.preview1, .preview2 {
+  opacity: 50%; }
+
+.p1.victory {
+  box-shadow: 0px 0px 40px 20px #aa0000; }
+
+.p2.victory {
+  box-shadow: 0px 0px 40px 20px #ffd45f; }
+
+.reset_button p {
+  font-size: 20px; }
+
+#reset_game {
+  margin-top: 1em;
+  font-size: 16px;
+  padding: 0.3em; }
+
+.game-bw {
+  background-color: #e4e3e3; }
+  .game-bw .row {
+    background-color: dimgray; }
+  .game-bw .p1, .game-bw .preview1 {
+    background-color: white; }
+  .game-bw .p2, .game-bw .preview2 {
+    background-color: black; }
+  .game-bw .p1.victory {
+    box-shadow: 0px 0px 40px 20px white; }
+  .game-bw .p2.victory {
+    box-shadow: 0px 0px 40px 20px black; }
+
+.game-jungle {
+  background-color: #172815; }
+  .game-jungle .row {
+    background-color: #afca80; }
+  .game-jungle .p1, .game-jungle .preview1 {
+    background-color: #3E5622; }
+  .game-jungle .p2, .game-jungle .preview2 {
+    background-color: #83781B; }
+  .game-jungle .p1.victory {
+    box-shadow: 0px 0px 40px 20px #3E5622; }
+  .game-jungle .p2.victory {
+    box-shadow: 0px 0px 40px 20px #83781B; }
+
+.game-neptune {
+  background-color: #04515f; }
+  .game-neptune .row {
+    background-color: #e3fffd; }
+  .game-neptune .p1, .game-neptune .preview1 {
+    background-color: #88f1ff; }
+  .game-neptune .p2, .game-neptune .preview2 {
+    background-color: #007c6b; }
+  .game-neptune .p1.victory {
+    box-shadow: 0px 0px 40px 20px #88f1ff; }
+  .game-neptune .p2.victory {
+    box-shadow: 0px 0px 40px 20px #007c6b; }
+
+.game-arid {
+  background-color: #be5256; }
+  .game-arid .row {
+    background-color: #dbcece; }
+  .game-arid .p1, .game-arid .preview1 {
+    background-color: #666370; }
+  .game-arid .p2, .game-arid .preview2 {
+    background-color: #292d4b; }
+  .game-arid .p1.victory {
+    box-shadow: 0px 0px 40px 20px #666370; }
+  .game-arid .p2.victory {
+    box-shadow: 0px 0px 40px 20px #292d4b; }
+
+.game-decay {
+  background-color: #8C5383; }
+  .game-decay .row {
+    background-color: #C1B2AB; }
+  .game-decay .p1, .game-decay .preview1 {
+    background-color: #92374D; }
+  .game-decay .p2, .game-decay .preview2 {
+    background-color: #4A5899; }
+  .game-decay .p1.victory {
+    box-shadow: 0px 0px 40px 20px #92374D; }
+  .game-decay .p2.victory {
+    box-shadow: 0px 0px 40px 20px #4A5899; }
+
+.game-egirl {
+  background-color: #e0e0e0; }
+  .game-egirl .row {
+    background-color: #ffdbca; }
+  .game-egirl .p1, .game-egirl .preview1 {
+    background-color: #ff1dbb; }
+  .game-egirl .p2, .game-egirl .preview2 {
+    background-color: #b445ff; }
+  .game-egirl .p1.victory {
+    box-shadow: 0px 0px 40px 20px #ff1dbb; }
+  .game-egirl .p2.victory {
+    box-shadow: 0px 0px 40px 20px #b445ff; }
+
+.game-beachturtle {
+  background-color: #8baf96; }
+  .game-beachturtle .row {
+    background-color: #4f4753; }
+  .game-beachturtle .p1, .game-beachturtle .preview1 {
+    background-color: #79B473; }
+  .game-beachturtle .p2, .game-beachturtle .preview2 {
+    background-color: #41658A; }
+  .game-beachturtle .p1.victory {
+    box-shadow: 0px 0px 40px 20px #79B473; }
+  .game-beachturtle .p2.victory {
+    box-shadow: 0px 0px 40px 20px #41658A; }
+
+.game-beach {
+  background-color: #f3f722; }
+  .game-beach .row {
+    background-color: #b3c0fd; }
+  .game-beach .p1, .game-beach .preview1 {
+    background-color: #f8f8f8; }
+  .game-beach .p2, .game-beach .preview2 {
+    background-color: #3d6be7; }
+  .game-beach .p1.victory {
+    box-shadow: 0px 0px 40px 20px #f8f8f8; }
+  .game-beach .p2.victory {
+    box-shadow: 0px 0px 40px 20px #3d6be7; }
+
+.game-citystreet {
+  background-color: #413d3e; }
+  .game-citystreet .row {
+    background-color: #dab3b9; }
+  .game-citystreet .p1, .game-citystreet .preview1 {
+    background-color: #8f0130; }
+  .game-citystreet .p2, .game-citystreet .preview2 {
+    background-color: #FF7F51; }
+  .game-citystreet .p1.victory {
+    box-shadow: 0px 0px 40px 20px #8f0130; }
+  .game-citystreet .p2.victory {
+    box-shadow: 0px 0px 40px 20px #FF7F51; }
+
+.game-space {
+  background-color: #141414; }
+  .game-space .row {
+    background-color: #ffffff; }
+  .game-space .p1, .game-space .preview1 {
+    background-color: #4153bd; }
+  .game-space .p2, .game-space .preview2 {
+    background-color: #f8e74a; }
+  .game-space .p1.victory {
+    box-shadow: 0px 0px 40px 20px #4153bd; }
+  .game-space .p2.victory {
+    box-shadow: 0px 0px 40px 20px #f8e74a; }
+
+.game-backrooms {
+  background-color: #7B886F; }
+  .game-backrooms .row {
+    background-color: #FEFFA5; }
+  .game-backrooms .p1, .game-backrooms .preview1 {
+    background-color: #B4DC7F; }
+  .game-backrooms .p2, .game-backrooms .preview2 {
+    background-color: #FFA0AC; }
+  .game-backrooms .p1.victory {
+    box-shadow: 0px 0px 40px 20px #B4DC7F; }
+  .game-backrooms .p2.victory {
+    box-shadow: 0px 0px 40px 20px #FFA0AC; }
+
+.game-darkgrey {
+  background-color: #ffffff; }
+  .game-darkgrey .row {
+    background-color: #e9e9e9; }
+  .game-darkgrey .p1, .game-darkgrey .preview1 {
+    background-color: #a5a5a5; }
+  .game-darkgrey .p2, .game-darkgrey .preview2 {
+    background-color: #242424; }
+  .game-darkgrey .p1.victory {
+    box-shadow: 0px 0px 40px 20px #a5a5a5; }
+  .game-darkgrey .p2.victory {
+    box-shadow: 0px 0px 40px 20px #242424; }
+
+.game-nasa {
+  background-color: #ebebeb; }
+  .game-nasa .row {
+    background-color: #000000; }
+  .game-nasa .p1, .game-nasa .preview1 {
+    background-color: #a7a4a4; }
+  .game-nasa .p2, .game-nasa .preview2 {
+    background-color: #ffffff; }
+  .game-nasa .p1.victory {
+    box-shadow: 0px 0px 40px 20px #a7a4a4; }
+  .game-nasa .p2.victory {
+    box-shadow: 0px 0px 40px 20px #ffffff; }
+
+.game-jonkler {
+  background-color: #1eff00; }
+  .game-jonkler .row {
+    background-color: #ff00f2; }
+  .game-jonkler .p1, .game-jonkler .preview1 {
+    background-color: #a7a4a4; }
+  .game-jonkler .p2, .game-jonkler .preview2 {
+    background-color: #fffb00; }
+  .game-jonkler .p1.victory {
+    box-shadow: 0px 0px 40px 20px #a7a4a4; }
+  .game-jonkler .p2.victory {
+    box-shadow: 0px 0px 40px 20px #fffb00; }
+
+/*# sourceMappingURL=connect.css.map */
